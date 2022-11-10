@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        p{
+            color: grey;
+        }
+        table,th,td{
+            width: 800px; 
+            margin: auto; 
+            font-size: 16px; 
+            padding: 20px; 
+            text-align: center; 
+            border: 2px solid grey; 
+            color: white;
+            border-collapse: collapse;
+        }
+        ul{
+            color: grey;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u>Lists</u></h1>
+    <p>A list is a data structure (a way of organising data). A list has items of the same datatype and may include duplicates. The number of items in a list can grow or shrink. Items can be added into a particular position in a list.</p>
+    <p>One way to implement a list in Java to use an ArrayList. A number of different operations can be perfromed on an ArrayList. These are shown in the table below.</p>
+    <p>The examples are based on the following list with the identifier myList: 45, 66, 41, 13, 19, 8. </p> 
+
+    <table>
+        <tr>
+          <th>List Operation</th>
+          <th>Description</th>
+          <th>Example</th>
+          <th>Output</th>
+        </tr>
+        <tr>
+          <td>isEmpty()</td>
+          <td>Test for empty list</td>
+          <td>myList.isEmpty()</td>
+          <td>False</td>
+        </tr>
+        <tr>
+          <td>add(item)</td>
+          <td>Appends the specified item to the end of a list.</td>
+          <td>myList.add(10)</td>
+          <td>45, 66, 41, 13, 19, 8, 10</td>
+        </tr>
+        <tr>
+            <td>add(index, item)</td>
+            <td>Inserts the specified item at the specified position index in a list.</td>
+            <td>myList.add(1, 69)</td>
+            <td>45, 69, 66, 41, 13, 19, 8, 10</td>
+        </tr>
+        <tr>
+            <td>remove()</td>
+            <td>Removes the element at the specified position in this list. Shifts any subsequent elements to the left (subtracts one from their indices).</td>
+            <td>myList.remove(0)</td>
+            <td>69, 66, 41, 13, 19, 8, 10</td>
+        </tr>
+        <tr>
+            <td>size()</td>
+            <td>Returns the number of elements in this list i.e the size of the list.</td>
+            <td>myList.size()</td>
+            <td>69, 66, 41, 13, 19, 8, 10 so 7.</td>
+        </tr>
+        <tr>
+            <td>get(index)</td>
+            <td>Gets the element of a specified position within the list.</td>
+            <td>myList.get(5)</td>
+            <td>69, 66, 41, 13, 19, 8, 10 so 8.</td>
+        </tr>
+        <tr>
+            <td>clear()</td>
+            <td>Removes all of the elements from this list.</td>
+            <td>myList.clear()</td>
+            <td>()</td>
+        </tr>
+        <tr>
+            <td>contains(item)</td>
+            <td>Returns true if this list contains the specified element.</td>
+            <td>myList.contains(69)</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>lastIndexOf(item)</td>
+            <td>Returns the index in this list of the last occurrence of the specified element, or -1 if the list does not contain this element.</td>
+            <td>myList.lastIndexOf(13)</td>
+            <td>69, 66, 41, 13, 19, 8, 10 so 3.</td>
+        </tr>
+        <tr>
+            <td>indexOf(item)</td>
+            <td>Returns the index in this list of the first occurrence of the specified element, or -1 if the list does not contain this element.</td>
+            <td>myList.indexOf(41)</td>
+            <td>69, 66, 41, 13, 19, 8, 10 so 2.</td>
+        </tr>
+      </table>
+
+        <ul>
+            <li>A collection of data items in a sequence without any gaps (unlike arrays).</li>
+            <li>Accessed via index (like arrays) starting at 0.</li>
+            <li>Data items can be inserted or deleted at any point in the list.</li>
+            <li>Can hold different data types.</li>
+            <li> Lists are dynamic (not fixed/static) and can grow and shrink as required.</li>
+            <li>No pseudocode for lists has been provided by OCR.  Some common lists methods are shown right. Assume any pseudocode will be explained in the exam question.</li>
+        </ul>
+
+
+</body>
+</html> 
